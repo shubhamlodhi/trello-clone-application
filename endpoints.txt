@@ -1,0 +1,125 @@
+
+End Points For Trello Clone Assignment GreenDeck 
+------------------------------------------------------------------------------
+
+Heroku Link : https://trello-clone-routes.herokuapp.com
+Local : 127.0.0.1:3117
+
+------------------------------------------------------------------------------
+
+
+
+For Authorization
+-------------------
+POST    <api_url>/auth/register 		To SigUp User Credentials
+POSt 	<api_url>/auth/login    		To Check and Login
+
+For User Board
+-------------------
+GET	<api_url>/board/      			Find all Boards
+POST	<api_url>/board/:id   			Update Board
+GET	<api_url>/board/:id   			Find one Boards   -->  board.findOne({...  })
+GET	<api_url>/board/:<by other fields> 	Find boards by other criteria
+
+For Dashboard
+-------------------
+POST	<api_url>/api/task/ 			To Create Task
+GET	<api_url>/api/task/ 			To Fetch All Task
+GET	<api_url>/api/task/:id 			To Fetch One Task by id 
+PUT	<api_url>/api/task/:id 			To Update Task
+PUT 	<api_url>/task/stage/:id 		To Update Stage
+GET 	<api_url>/task/stage/:id/:board_id 	Fetch Task by User_Id & Board_id
+
+For Members 
+-------------------
+GET 	<api_url>/api/user/   			Fetch all Users
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*******Developed Route*******
+
+//-------------------------------
+
+GET http://127.0.0.1:3117/
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDc4MzkyNzksImV4cCI6MTYwNzg0Mjg3OSwiYXVkIjoiNWZkNWFlMmZjOTllY2VhYTljMDI3MjQ1IiwiaXNzIjoic2h1YmhhbWxvZGhpLmdpdGh1Yi5pbyJ9.GQTgMeg2f77WtCtUxiGvxTmxD1u1eFZX6zWbZF6ZYI4
+
+
+
+### Login Route
+POST http://127.0.0.1:3117/auth/login
+Content-Type: application/json
+
+{
+    "email": "tanmay696@test.com",
+   "password": "password"
+}
+
+
+
+
+### SignUp Route
+POST https://trello-clone-routes.herokuapp.com/auth/register
+Content-Type: application/json
+
+{
+   "email": "tanmay696@test.com",
+   "password": "password"
+   // "boardList": ["board1","board2"]
+}
+
+
+
+
+### Board Route
+POST http://localhost:3117/board
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDgxNjAzNzYsImV4cCI6MTYwODE2Mzk3NiwiYXVkIjoiNWZkYTU0NjhlMWI1NGQwMDI0NTgyODQ5IiwiaXNzIjoic2h1YmhhbWxvZGhpLmdpdGh1Yi5pbyJ9.g20GvvANFBON4aQih8xblW1pxrCiLldfzp6bN9KwNy8
+Content-Type: application/json
+
+{
+    "boardName" : "Accounts Team"
+    //"boardMembers": ["shubham","Singh","Rahul"]
+}
+
+
+
+
+
+### All Board Route
+GET http://localhost:3117/board/getboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDgxODExMjIsImV4cCI6MTYwODE4NDcyMiwiYXVkIjoiNWZkYTU0NjhlMWI1NGQwMDI0NTgyODQ5IiwiaXNzIjoic2h1YmhhbWxvZGhpLmdpdGh1Yi5pbyJ9.fzD90WWbFKDhaDMph4MGocQfkxG15bk2q7zgl80oIJI
+
+//-------------------------------------
+
+
+*******Yet To Develop Routes*******   
+
+//-----------------------------------
+
+
+### Refresh-Token Route
+POST http://localhost:3000/auth/refresh-token
+
+
+
+### LogOut Route
+DELETE  http://localhost:3000/auth/logout    
+
+
+//--------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+	
