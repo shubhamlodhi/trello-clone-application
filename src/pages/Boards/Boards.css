@@ -1,0 +1,72 @@
+h1 {
+    margin-left: 5%;
+    color: #5F3DC4;
+    font-family: "Indie";/* BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol;*/
+}
+
+.board {
+    margin-left:5%;
+    display: flex;
+    flex-direction: row;
+    /* padding: 10px; */
+    justify-content:space-between;
+  
+}
+
+.left__board{
+    margin-left:-2%;  
+  width: 80%;  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+    
+    /* flex-direction: row; */
+    
+    /* justify-content:center; */
+     /* background-color:rgb(191, 201, 243); */
+
+}
+
+.right__board{
+    margin-top:-100px;
+    /* margin-left:100px; */
+    
+    
+    
+    
+    
+    /* background-color: red; */
+    /* width:20% */
+    
+}
+
+
+.hello{
+    margin:15px;
+    width:275px;
+    height: 160px;
+    /* background-color:green; */
+}
+
+
+media (max-width: 300px) {
+    .left-board{
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      }
+}
+.empty-navbar{
+    background-color:#5F3DC4;
+    height:50px;
+
+}
+.boardsdash{
+    margin-left:5%;
+    margin-right:5%;
+}
+.log_button{
+    /* margin-top: 10%;
+    margin-bottom: 5%;  */
+    margin:20px;
+    color:#fff;
+    background-color:#5F3DC4 !important;
+}

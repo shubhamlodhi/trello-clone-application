@@ -1,0 +1,17 @@
+.Column__title_body{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color:#CED4DA;
+    border-radius: 10px;
+    /* height:40px; */
+}
+
+.Column__title{
+    
+    text-align: center;
+    width:80%;
+    
+    /* margin:5px; */
+    /* background-color:#CED4DA; */
+    }

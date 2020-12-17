@@ -1,0 +1,173 @@
+.dashboard{
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+}
+
+.dashboard__navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    /* background-color:yellow; */
+    padding: 10px;
+    
+}
+
+.dashboard__body{
+    padding: 10px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+
+}
+
+
+
+.dashboard h1{
+    /* margin-left:0px; */
+}
+
+
+.addMember_button{
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+    
+    color:#fff;
+    background-color:#5F3DC4 !important;
+}
+
+.addTask_button{
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+    margin:auto;
+    height: 30px;
+    width: 30px;
+    border-radius:100px;
+    color:#fff;
+    background-color:#5F3DC4 !important;
+}
+
+/* .addMember_button button{
+    background-color:#5F3DC4 !important;
+} */
+
+
+
+.Column__head{
+    width:20%;
+
+    /* height: 700px; */
+    /* background-color:red; */
+}
+
+
+
+.indevelopment{
+
+    background-color:blue;
+}
+.tobereviewed{
+    background-color:green;
+}
+.finished{
+    background-color:purple;
+}
+
+
+
+
+.Column__body{
+    /* margin : 0px; */
+    /* padding: 5px; */
+    display:flex;
+    flex-direction:column;
+
+     /* justify-content: space-evenly;  */
+    
+/* background-color:pink; */
+/* padding: 10px; */
+}
+
+.taskCard{
+
+    
+    height:150px;
+    background-color:yellowgreen;
+    
+}
+
+.tsk
+{
+    /* height:100px; */
+    width:100%;
+    margin-top:20px;
+    margin-left: 0px;;
+    background-color:#f2f4fc;
+    border-radius:5px;
+    border: 1px solid #8B8B8B;
+    
+}
+
+.tsk__members{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* text-align: left; */
+    background-color:red;
+}
+
+.tsk__member_avatar{
+    text-align: center;
+    margin-left: 10px;
+    height:50px;
+    border-radius:50px;
+    background-color:purple;
+}
+
+.empty-navbar{
+
+    background-color:#5F3DC4;
+    height:50px;
+}
+
+.hello{
+    margin-top:50px;
+    margin-left:-2px;
+    width:275px;
+    height: 160px;
+    /* background-color:green; */
+}
+
+.Column__title{
+    
+    text-align: center;
+    width:80%;
+    
+    /* margin:5px; */
+    /* background-color:#CED4DA; */
+    }
+
+.Column__title_body{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color:#CED4DA;
+    border-radius: 10px;
+    /* height:40px; */
+}
+
+
+.Column__title_body{
+    
+    /* background-color:red; */
+}
+.addTask{
+    text-align: center;
+    /* background-color:#5F3DC4; */
+    width:0px;
+    
+    
+    border-radius: 100px;
+}

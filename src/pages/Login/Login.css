@@ -1,0 +1,49 @@
+.loginForm{
+    display: flex;
+    
+    justify-content: center;
+    
+    background-color: #5F3DC4;
+    
+    
+}
+
+.loginForm__box{
+    margin-top: 123px;
+    margin-bottom: 200px;
+    border-radius: 10px ;
+    padding: 10px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(245, 244, 247);
+    
+
+}
+
+#email{
+    margin-top: 10px;
+}
+
+#label{
+    margin-left: 30px;
+}
+
+#submit{
+    margin-top:40px;
+    margin-left:auto;
+    margin-right:auto; 
+    height: 40px;
+    width: 200px;
+    color:#5F3DC4;
+    
+}
+
+
+.log_button{
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+    margin:20px;
+    color:#fff;
+    background-color:#5F3DC4 !important;
+}
