@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# trello-clone-app
+ Trello clone using the MERN stack. Trello is a Kanban-style list-making application that is often used to manage agile software development.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Product Engineer / Full-Stack Engineer assignment
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Frontend Views
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The application will have the following views on the frontend -
 
-### `npm test`
+### Default Page
+![Default Page](https://i.ibb.co/nmW830x/Default-Page.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Signup Page 
+-   `/signup` - a user can create a new account here
+![Signup Page](https://i.ibb.co/dLc2RrD/Signup-Page.png)
+	
+### Login Page
+-   /`login` - user login
+     ![Login Page](https://i.ibb.co/7jWb9qz/Login-Page.png)
+### Board
+-   `/boards` - the list of all the boards that are assigned to the member
+![Board](https://i.ibb.co/z7gByjH/Boards-Page.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### DashBoard
+-   `/<board_id>/dashboard` - the main dashboard of the board in which members can update their tasks
+![DashBoard](https://i.ibb.co/nD2CmBR/Product-Team-Dashboard.png)
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## More View on Boards Page 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### On Create Board Button
+![On Create Board Button](https://i.ibb.co/h23gQ3r/Create-Board-Dialog.png)
+-
+### Members DropDown
+![Member DropDown](https://i.ibb.co/4W3Z97L/Create-Board1.png)
+-
+### Selected Members Grid On the Go
+![Selected Members Grid On the Go ](https://i.ibb.co/h7h2rLy/Create-Board2.png)
+-
+### Listed Accounts Team on Boards
+![Listed Accounts Team on Boards](https://i.ibb.co/HqC4b9T/Boards-Page2.png)
+-
+### Accounts Team DashBoard
+![Accounts Team DashBoard](https://i.ibb.co/rw6vst4/Accounts-Team-Dash-Board.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## More Views  on Dashboard  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Product Team Dashboard
+![Product Team Dashboard](https://i.ibb.co/nD2CmBR/Product-Team-Dashboard.png)
+-
+### Add Members to Board
+![Add Members to Board](https://i.ibb.co/9tKbXhb/Add-Member-Dialog.png)
+### On Click to Task   ,Only View  Not Editable
+![On Click to Task   ,Only View  Not Editable](https://i.ibb.co/gF87XWD/OpenTask.png)
+### On Edit Click
+![On Edit Click ](https://i.ibb.co/zrYq7xC/EditTask.png)
+### Add task to Dashboard Stages
+![Add task to Dashboard Stages](https://i.ibb.co/SP6cb4D/AddTask.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
