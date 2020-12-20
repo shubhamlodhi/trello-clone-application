@@ -28,7 +28,7 @@ const { verifyAccessToken } = require('./helpers/jwt_helper');
 
 // app.use(cors({ origin: true }));
 
-const whitelist = ['http://localhost:3000', 'http://localhost:8080','https://trello-clone-app-v2.herokuapp.com']
+const whitelist = ['http://localhost:3000', 'http://localhost:8080','https://trello-clone-app-v2.herokuapp.com','https://trello-clone-app.herokuapp.com']
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin)
