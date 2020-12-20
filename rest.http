@@ -1,0 +1,49 @@
+GET http://127.0.0.1:3117/
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDc4MzkyNzksImV4cCI6MTYwNzg0Mjg3OSwiYXVkIjoiNWZkNWFlMmZjOTllY2VhYTljMDI3MjQ1IiwiaXNzIjoic2h1YmhhbWxvZGhpLmdpdGh1Yi5pbyJ9.GQTgMeg2f77WtCtUxiGvxTmxD1u1eFZX6zWbZF6ZYI4
+
+### Login Route
+POST http://127.0.0.1:8080/auth/login
+Content-Type: application/json
+
+{
+    "email": "tanmay696@test.com",
+   "password": "password"
+}
+
+### Register Route
+POST https://trello-clone-routes.herokuapp.com/auth/register
+Content-Type: application/json
+
+{
+   "email": "tanmay696@test.com",
+   "password": "password"
+   // "boardList": ["board1","board2"]
+}
+
+### Board Route
+POST http://localhost:3117/board
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDgxNjAzNzYsImV4cCI6MTYwODE2Mzk3NiwiYXVkIjoiNWZkYTU0NjhlMWI1NGQwMDI0NTgyODQ5IiwiaXNzIjoic2h1YmhhbWxvZGhpLmdpdGh1Yi5pbyJ9.g20GvvANFBON4aQih8xblW1pxrCiLldfzp6bN9KwNy8
+Content-Type: application/json
+
+{
+    "boardName" : "Engineering Team"
+    //"boardMembers": ["shubham","Singh","Rahul"]
+}
+
+
+### get Board Route
+GET http://localhost:3117/board/getboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDgxMjAyODMsImV4cCI6MTYwODEyMzg4MywiYXVkIjoiNWZkOWY3YzJjMmE4Y2U0MDg0YzE2MGYzIiwiaXNzIjoic2h1YmhhbWxvZGhpLmdpdGh1Yi5pbyJ9.vw1-yCYf3NAc9rHSxNNMlRK2-19gVcpwgD-kGal9r6U
+
+### get Board Route
+PUT http://localhost:3000/board/5fd5cb398f0e67a010104c04/shivam
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDc4NDc1NTEsImV4cCI6MTYwNzg1MTE1MSwiYXVkIjoiNWZkNWNlN2ZkNzMxZDVhYjI0NDVlZWJkIiwiaXNzIjoic2h1YmhhbWxvZGhpLmdpdGh1Yi5pbyJ9.-hy8nXX5SUPMjKdd61RWenYd9KfkiG3jVh33kR49xno
+
+
+
+
+### Refresh-Token Route
+POST http://localhost:3000/auth/refresh-token
+
+### LogOut Route
+DELETE  http://localhost:3000/auth/logout
